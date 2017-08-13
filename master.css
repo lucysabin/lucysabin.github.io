@@ -86,7 +86,8 @@ a {
 }
 
 .nourish-mobile {
-  width: 60%;
+  width: 50%;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
