@@ -85,7 +85,14 @@ a {
   height: auto;
 }
 
+.nourish-mobile {
+  width: 60%;
+}
+
 @media (max-width: 768px) {
+  .nourish-mobile {
+    width: 100%;
+  }
   ul {
     height: auto;
   }
