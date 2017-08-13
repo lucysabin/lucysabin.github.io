@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body, html {
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  background: #f8f8f8;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 1.2em;
+}
+dl {
+  margin-left: 1.5em;
+  margin-top: 0;
+}
+nav li, footer li {
+  list-style: none;
+  display: inline-block;
+  margin: 2em 4em;
+}
+h1 {
+  font-size: 1.4em;
+}
+.heading {
+  font-size: 1.2em;
+}
+#lucy-sabin {
+  height: 3em;
+}
+.portfolio-wrapper, .about-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3em 0em;
+}
+nav, footer {
+  height: auto;
+  background: white;
+}
+a {
+  color: indigo;
+}
+.nav-option, .footer-email {
+  float: right;
+}
+.portfolio-piece {
+  margin: .5em;
+}
+/*about-specific styles */
+.about-main-text {
+  width: 60%;
+  max-width: 960px;
+  margin: 3em;
+}
+.about-drawing {
+  width: 100%;
+  height: auto;
+}
+.my-approach-list, .links-list {
+  list-style-position: inside;
+  text-indent: each-line;
+}
+
+/*project page styles*/
+.project-wrapper {
+  width: 60%;
+  max-width: 960px;
+  margin: 4em auto;
+}
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.mobile-view {
+  visibility: hidden;
+}
+
+.cv-pic {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  ul {
+    height: auto;
+  }
+  nav li {
+    margin: 0em;
+    padding: 1em;
+    display: inherit;
+    text-align: center;
+  }
+  footer li {
+    margin: 0em .5em;
+    line-height: 3em;
+  }
+  .nav-option {
+    float: none;
+  }
+  .portfolio-wrapper, .portfolio-piece, .about-wrapper {
+    margin: 0;
+  }
+  .project-wrapper {
+    width: 90%;
+  }
+  .about-main-text {
+    width: 100%;
+    margin: 2em 1em;
+  }
+  .mobile-view {
+    visibility: visible;
+  }
+}
+#down-arrow {
+  height: 1em;
+}
+/* image overlay styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.container-fade {
+  position: relative;
+}
+.container-fade:hover .overlay {
+  opacity: .8;
+}
+.text {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
