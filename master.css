@@ -140,6 +140,12 @@ a {
   transition: .5s ease;
   background-color: black;
 }
+@media (max-width: 768px) {
+  .overlay {
+    opacity: .7;
+
+  }
+}
 .container-fade {
   position: relative;
 }
