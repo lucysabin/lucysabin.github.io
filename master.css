@@ -153,16 +153,6 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.email-button {
-  text-decoration: none;
-  background: coral;
-  border-radius: 1em;
-  padding: 1em 2em;
-  margin-bottom: 1em;
-  color: black;
-  font-size: 1.2em;
-  box-shadow: 10px 10px 5px #888888;
-}
 
 .under-nav, .under-footer {
   height: 5em;
