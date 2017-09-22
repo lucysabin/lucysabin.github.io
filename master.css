@@ -33,7 +33,10 @@ h1 {
   margin-top: -1em;
 }
 .intro-text {
-  margin: 4em 3em;
+  background-color: white;
+  width: 90%;
+  margin: 4em auto;
+  padding: 2em 0;
   text-align: center;
 }
 .portfolio-wrapper, .about-wrapper {
@@ -58,7 +61,7 @@ footer {
   padding-bottom: 1em;
 }
 #copyright {
-  color: lavender;
+  color: silver;
 }
 a {
   color: turquoise;
@@ -73,7 +76,7 @@ a {
   text-decoration: underline;
 }
 .portfolio-piece {
-  margin: .5em;
+  width: 100%;
 }
 /*about-specific styles */
 .about-main-text {
@@ -125,11 +128,13 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: lavender;
+}
+.portfolio-cover {
+  width: 30%;
+  margin-bottom: -1em;
 }
 @media (max-width: 768px) {
   .overlay {
@@ -153,15 +158,19 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
-.under-nav, .under-footer {
+.under-nav {
   height: 5em;
+}
+.under-footer {
+  height: 10em;
 }
 
 @media (max-width: 768px) {
   .intro-text {
     text-align: left;
-    margin: 1em;
+    padding: 1em;
+    margin: 2em auto;
+    width: 100%
   }
   nav {
     position: relative
@@ -174,7 +183,19 @@ a {
     height: auto;
     display: block;
   }
-
+  .portfolio-cover {
+    width: 100%;
+    margin: 1em;
+  }
+  .text {
+    font-size: 1em;
+  }
+  .overlay {
+    height: 3em;
+    opacity: 1;
+    background-color: white;
+    position: relative;
+  }
   #copyright {
     display: none;
   }
@@ -198,9 +219,6 @@ a {
   }
   .nav-option {
     float: none;
-  }
-  .container-fade {
-    margin-bottom: 1em;
   }
   .portfolio-wrapper, .portfolio-piece, .about-wrapper {
     margin: 0;
