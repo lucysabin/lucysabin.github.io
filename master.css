@@ -45,11 +45,11 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0em;
+  margin-bottom: 3em;
 }
 nav, footer {
   height: auto;
   background: white;
-  position: fixed;
   width: 100%;
   z-index: 1;
 }
@@ -77,6 +77,7 @@ a {
 }
 .portfolio-piece {
   width: 100%;
+  height: auto;
 }
 /*about-specific styles */
 .about-main-text {
@@ -102,10 +103,6 @@ a {
 .project-img {
   width: 100%;
   height: auto;
-}
-
-.mobile-view {
-  visibility: hidden;
 }
 
 .cv-pic {
@@ -134,7 +131,6 @@ a {
 }
 .portfolio-cover {
   width: 30%;
-  margin-bottom: -1em;
 }
 @media (max-width: 768px) {
   .overlay {
@@ -158,22 +154,17 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.under-nav {
-  height: 5em;
-}
-.under-footer {
-  height: 10em;
-}
 
 @media (max-width: 768px) {
   .intro-text {
     text-align: left;
-    padding: 1em;
     margin: 2em auto;
-    width: 100%
+    width: 90%;
+    padding: .5em;
   }
   nav {
-    position: relative
+    position: relative;
+    margin-bottom: 2em;
   }
   .under-nav {
     height: 0;
@@ -195,9 +186,6 @@ a {
     opacity: 1;
     background-color: white;
     position: relative;
-  }
-  #copyright {
-    display: none;
   }
   .footer-email {
     font-size: 1em;
@@ -230,7 +218,72 @@ a {
     width: 100%;
     margin: 2em 1em;
   }
-  .mobile-view {
-    visibility: visible;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.contact__para {
+  line-height: 1.5em;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.contact__para, .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 85%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 3em;
+}
+
+.form__btn {
+  font-size: 1.2em;
+}
+
+.form__input--name, .form__input--email, .form__input--message {
+  font-size: 1em;
+  line-height: 2em;
+  margin: 1em auto;
+  width: 100%;
+}
+
+.contact__button, .form__btn {
+  text-align: center;
+  background-color: coral;
+  width: 30%;
+  margin: 0 auto;
+  max-width: 20em;
+  padding: 1em 0em 1em 0em;
+  margin: 2em auto;
+  color: white;
+}
+
+.contact__button a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact__link {
+  color: coral;
+}
+
+@media (max-width: 768px) {
+  .contact__para {
+    text-align: left;
+  }
+  .form__btn {
+    padding: .5em 0em;
+    margin-top: 1em;
   }
 }
