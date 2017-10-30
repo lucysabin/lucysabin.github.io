@@ -287,3 +287,16 @@ a {
     margin-top: 1em;
   }
 }
+
+.img-panel {
+  width: 100%;
+}
+.img-panel img {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .img-panel img {
+    width: 100%;
+  }
+}
