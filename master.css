@@ -22,7 +22,7 @@ nav li, footer li {
   margin: 2em 4em;
   margin-bottom: 0em;
 }
-h1 {
+h1, .enlarge {
   font-size: 1.4em;
 }
 .heading {
@@ -299,4 +299,8 @@ a {
   .img-panel img {
     width: 100%;
   }
+}
+
+.back-top {
+  text-align: center;
 }
