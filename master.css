@@ -25,6 +25,9 @@ nav li, footer li {
 h1, .enlarge {
   font-size: 1.4em;
 }
+h1 {
+  margin-top: 3em;
+}
 .heading {
   font-size: 1.2em;
 }
@@ -262,10 +265,9 @@ a {
   text-align: center;
   background-color: coral;
   width: 30%;
-  margin: 0 auto;
   max-width: 20em;
   padding: 1em 0em 1em 0em;
-  margin: 2em auto;
+  margin: 4em auto;
   color: white;
 }
 
@@ -299,6 +301,19 @@ a {
   .img-panel img {
     width: 100%;
   }
+}
+
+#orgs {
+  margin-bottom: 3em;
+}
+
+.partner-logo {
+  max-width: 13em;
+  margin: 1em;
+}
+
+#more, #h1-more {
+  text-align: right;
 }
 
 .back-top {
