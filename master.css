@@ -316,7 +316,7 @@ a {
 
 @media (max-width: 768px) {
   .contact__para {
-    text-align: left;
+    /* text-align: left; */
   }
   .form__btn {
     padding: .5em 0em;
