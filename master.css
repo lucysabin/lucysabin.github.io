@@ -279,6 +279,10 @@ a {
   margin: 0 auto;
 }
 
+#contact-header {
+  font-size: 2em;
+}
+
 .form {
   margin-top: 3em;
 }
