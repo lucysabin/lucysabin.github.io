@@ -69,6 +69,7 @@ nav, footer {
 }
 nav {
   top: 0;
+  position: fixed;
 }
 
 /* .fixed-nav {
@@ -374,7 +375,7 @@ a {
   background-image: url('./imgs/laptop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 100%;
+  background-position: 30% 100%;
   width: 100%;
   margin: 0 auto;
   height: 100vh;
@@ -386,7 +387,14 @@ a {
   text-align: center
 }
 
+.under-nav {
+  height: 3em;
+  width: 100%;
+  z-index: -1;
+}
+
 @media (max-width: 768px) {
-  #landing h1 {
+.under-nav {
+  height: 0em;
   }
 }
