@@ -401,3 +401,16 @@ a {
   height: 0em;
   }
 }
+
+#profile-pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#profile-pic {
+  width: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
