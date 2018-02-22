@@ -3,6 +3,9 @@
 body, html {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
+  /* background: #eeecf4; */
+}
+.solid-background {
   background: #eeecf4;
 }
 ul {
@@ -58,7 +61,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0em;
-  margin-bottom: 3em;
+  margin-bottom: 0em;
 }
 nav, footer {
   height: auto;
@@ -382,6 +385,16 @@ a {
   width: 100%;
   margin: 0 auto;
   height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+#landing-transparent {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  z-index: 1;
+  background: transparent;
 }
 
 #landing h1 {
@@ -392,6 +405,16 @@ a {
   text-align: center;
   background-color: black;
   color: white;
+}
+
+@media (max-width: 768px) {
+  #landing-transparent {
+    height: 0;
+  }
+  #landing {
+    z-index: auto;
+    position: inherit;
+  }
 }
 
 .under-nav {
@@ -422,4 +445,9 @@ a {
   #profile-pic {
     width: 100%;
   }
+}
+#about-section {
+  background: #eeecf4;
+  width: 100%;
+  margin: 0 auto;
 }
