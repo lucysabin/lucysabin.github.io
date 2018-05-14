@@ -464,3 +464,7 @@ a {
   line-height: 1.5em;
   font-size: 1.5em;
 }
+
+.soft-border {
+  border: solid silver .2em;
+}
