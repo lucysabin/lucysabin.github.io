@@ -468,3 +468,15 @@ a {
 .soft-border {
   border: solid silver .2em;
 }
+
+#down-arrow-div {
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+}
+#down-arrow-pic {
+  width: 30%;
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
